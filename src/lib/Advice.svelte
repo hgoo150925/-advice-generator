@@ -60,7 +60,7 @@
   }
   .container-btn {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 47%;
   }
   .container__btn {
