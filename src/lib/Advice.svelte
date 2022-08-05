@@ -1,6 +1,7 @@
 <script>
   let id;
   let quote;
+  let src = '../assets/images/pattern-divider-desktop.svg';
 
   const handleClick = async () => {
     const response = await fetch('https://api.adviceslip.com/advice');
@@ -23,12 +24,25 @@
             taking actions.`}
         </p>
       {/if}
+      <button class="container__btn btn" on:click={handleClick}>btn</button>
     </div>
   </div>
-  <button class="container__btn btn" on:click={handleClick}>btn</button>
 </main>
 
 <style>
+  /* .container {
+    background-color: var(--dark-grayish-blue);
+    border-radius: 1.2rem;
+    max-width: 54rem;
+    height: 34rem;
+    margin: 22.4rem auto;
+  } */
+  .container {
+    background-color: var(--dark-grayish-blue);
+    border-radius: 1.2rem;
+    max-width: 54rem;
+    margin: 22.4rem auto;
+  }
   .container__adivice h1 {
     color: var(--neon-green);
     letter-spacing: 0.5rem;
