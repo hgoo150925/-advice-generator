@@ -16,31 +16,27 @@
     <div class="container__adivice">
       {#if id}
         <h1>Advice #{id}</h1>
-        <p>{quote}</p>
+        <p>"{quote}"</p>
       {:else}
         <h1>Advice #{117}</h1>
         <p>
-          {`It is easy to sit up and take notice, what's difficult is getting up and
-            taking actions.`}
+          {`"It is easy to sit up and take notice, what's difficult is getting up and
+            taking actions."`}
         </p>
       {/if}
-      <button class="container__btn btn" on:click={handleClick}>btn</button>
     </div>
+  </div>
+  <div>
+    <button class="container__btn btn" on:click={handleClick}>btn</button>
   </div>
 </main>
 
 <style>
-  /* .container {
-    background-color: var(--dark-grayish-blue);
-    border-radius: 1.2rem;
-    max-width: 54rem;
-    height: 34rem;
-    margin: 22.4rem auto;
-  } */
   .container {
     background-color: var(--dark-grayish-blue);
     border-radius: 1.2rem;
     max-width: 54rem;
+    height: 34rem;
     margin: 22.4rem auto;
   }
   .container__adivice h1 {
@@ -53,9 +49,17 @@
     font-size: 2.5rem;
     margin: 3.2rem 0 0 0;
   }
+  .container__adivice {
+    padding: 4.6rem;
+    text-align: center;
+    background-image: url('../assets/images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 85%;
+  }
   .container__btn {
     background-color: var(--neon-green);
-    background-image: url('./assets//images/icon-dice.svg');
+    background-image: url('../assets/images/icon-dice.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40%;
