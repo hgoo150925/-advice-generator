@@ -36,8 +36,8 @@
     background-color: var(--dark-grayish-blue);
     border-radius: 1.2rem;
     width: calc(100% - 1rem * 2);
-    max-width: 70rem;
-    height: 45rem;
+    max-width: 55rem;
+    height: 35rem;
     margin: 22.4rem auto;
   }
   .container__adivice h1 {
@@ -51,7 +51,7 @@
     margin: 3.2rem 0 0 0;
   }
   .container__adivice {
-    padding: 8rem;
+    padding: 4.6rem;
     text-align: center;
     background-image: url('../assets/images/pattern-divider-desktop.svg');
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@
   .container-btn {
     position: absolute;
     top: 80%;
-    left: 47%;
+    left: 48.5%;
   }
   .container__btn {
     background-color: var(--neon-green);
@@ -75,8 +75,8 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
   .btn:hover {
     box-shadow: 0px 0px 1.375rem var(--neon-green);
