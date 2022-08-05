@@ -60,8 +60,8 @@
   }
   .container-btn {
     position: absolute;
-    top: 90%;
-    left: 48.3%;
+    top: 70%;
+    left: 47.5%;
   }
   .container__btn {
     background-color: var(--neon-green);
