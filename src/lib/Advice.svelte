@@ -26,7 +26,7 @@
       {/if}
     </div>
   </div>
-  <div>
+  <div class="container-btn">
     <button class="container__btn btn" on:click={handleClick}>btn</button>
   </div>
 </main>
@@ -35,8 +35,9 @@
   .container {
     background-color: var(--dark-grayish-blue);
     border-radius: 1.2rem;
-    max-width: 54rem;
-    height: 34rem;
+    width: calc(100% - 1rem * 2);
+    max-width: 70rem;
+    height: 45rem;
     margin: 22.4rem auto;
   }
   .container__adivice h1 {
@@ -46,16 +47,21 @@
   }
   .container__adivice p {
     color: var(--light-cyan);
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 3.2rem 0 0 0;
   }
   .container__adivice {
-    padding: 4.6rem;
+    padding: 8rem;
     text-align: center;
     background-image: url('../assets/images/pattern-divider-desktop.svg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 85%;
+  }
+  .container-btn {
+    position: absolute;
+    top: 90%;
+    left: 48.3%;
   }
   .container__btn {
     background-color: var(--neon-green);
@@ -64,12 +70,15 @@
     background-position: center;
     background-size: 40%;
   }
-
   .btn {
+    position: relative;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .btn:hover {
+    box-shadow: 0px 0px 1.375rem var(--neon-green);
   }
 </style>
